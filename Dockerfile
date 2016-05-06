@@ -17,6 +17,7 @@ RUN set -x; \
         php5-gd \
         php5-curl \
         imagemagick \
+        librsvg2-bin \
         netcat \
         git \
         php-pear \

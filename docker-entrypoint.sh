@@ -123,7 +123,7 @@ if [ -d "$MEDIAWIKI_SHARED" ]; then
 
 	# If the images directory only contains a README, then link it to
 	# $MEDIAWIKI_SHARED/images, creating the shared directory if necessary
-	if [ "$(ls images)" = "README" -a ! -L images ]; then
+	if [ "$(ls images)" = "README" ]; then
 		rm -fr images
 		mkdir -p "$MEDIAWIKI_SHARED/images"
 		ln -s "$MEDIAWIKI_SHARED/images" images
